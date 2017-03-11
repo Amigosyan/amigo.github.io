@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+ <html lang=ru>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="css/bootstrap.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="style.css">
+ 	<link href="css/font-awesome.css" rel="stylesheet">
+ 	<title>Document</title>
+ </head>
+ 
+ <body style="background: url(images/fon.png)">
+ 
+ 	<div class="container">
+ 		<h2 style="color:  #003663; margin: 80px auto;" align="center">Заполните поля для регистраций</h2>
+ 		<form action="#" method="POST">
+			<div class="form-group">
+				<label>Ваше Имя: </label>
+                <input type="email" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group">
+            	<label>Ваш Логин: </label>
+                <input type="text" class="form-control" placeholder="Логин">
+            </div>
+            <div class="form-group">
+            	<label>Ваш Пароль: </label>
+                <input type="password" class="form-control" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+            	<label>Ваша Страна: </label><br>
+                <select name="country" id="country"> 
+                  <option disabled selected value="country0">Выберите страну</option>
+                   <option value="1">Казахстан</option>
+                   <option value="2">Россия</option>
+                   <option value="3">США</option>
+                   <option value="4">Китай</option>
+               </select>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-sign-in"></i> РЕГИСТРАЦИЯ
+            </button> 
+            <button type="reset" class="btn btn-primary">
+                <i class="fa fa-close"></i> ОЧИСТИТЬ ВСЕ
+            </button>
+        </form>
+ 	</div>
+ 
+ 
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 	 <script type="text/javascript" src="js/jquery.js"></script>
+     <script src="js/bootstrap.js"></script>
+     <script src="js/salvattore.min.js"></script>
+ 
+	 <style>
+		.form-group {max-width: 350px; margin-bottom: 20px;}
+		form {margin: 0 16.3333%}
+		@media screen and (min-width: 1200px) {
+			form {
+				margin-left: 33.33%;
+			}
+		}
+		#country {
+			padding: 7px;
+			
+		}
+	 </style>
+
+ </body>
+ </html>
